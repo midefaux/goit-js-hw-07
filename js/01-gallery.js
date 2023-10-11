@@ -1,6 +1,5 @@
 import { galleryItems } from './gallery-items.js';
 
-// Change code below this line
 const gallery = document.querySelector('.gallery');
 
 // Funcion para crear los elementos de la galeria
@@ -31,7 +30,7 @@ function openModal(event) {
 
     if (event.target.tagName === 'IMG') {
         const imageSource = event.target.getAttribute('data-source');
-
+      
         const instance = basicLightbox.create(`
             <img src='${imageSource}' width="800" height="600">
         `);
